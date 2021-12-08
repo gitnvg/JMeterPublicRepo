@@ -7,7 +7,7 @@
                 $class: 'GitSCM',
                 userRemoteConfigs: [
                         [
-                                url: "https://github.com/gitnvg/JMeterTest.git",
+                                url: "https://github.com/gitnvg/JMeterPublicRepo.git",
                                 credentialsId: "gitnvg"
                         ]
                 ],
