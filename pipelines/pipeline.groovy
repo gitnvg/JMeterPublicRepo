@@ -25,7 +25,9 @@
         }
       }
 
-      stage('Analyse Results') {
-		echo "Analyse results"
-      }
+       stage('CheckLog') {
+      steps {
+        if (manager.logContains('Avg')) {
+          error("Build failed because of this and that..")  
+	}
     }
