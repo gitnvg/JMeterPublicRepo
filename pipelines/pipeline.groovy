@@ -24,12 +24,7 @@
 			bat 'C:/apache-jmeter-3.2/apache-jmeter-3.2/bin/jmeter.bat -n -t Demo-Google.jmx -l Demo-Google.jtl'
         }
       }
-
-       stage('CheckLog') {
-      steps {
-        if (manager.logContains('Avg : 400')) {
-          error("Build failed because of this and that..")  
-	}
+      stage('Analyse Results') {
+		echo "Analyse results"
+      }
     }
-    }
-	}
