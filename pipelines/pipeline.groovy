@@ -21,7 +21,7 @@
 
       stage('Execute Performance Tests') {
         dir("${WORKSPACE}/scripts") {
-			bat 'C:/Users/trvxn/Downloads/apache-jmeter-5.4.1/apache-jmeter-5.4.1/bin/jmeter.bat -n -t Demo-Google.jmx -l Demo-Google.jtl'
+			bat 'C:/apache-jmeter-3.2/apache-jmeter-3.2/bin/jmeter.bat -n -t Demo-Google.jmx -l Demo-Google.jtl'
         }
       }
 
